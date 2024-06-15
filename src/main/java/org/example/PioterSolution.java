@@ -4,16 +4,6 @@ import java.util.HashMap;
 
 public class PioterSolution {
 
-    public static void main(String[] args) {
-
-        System.out.println(checkString("["));
-        System.out.println(checkString("[]"));
-        System.out.println(checkString("{[]}"));
-        System.out.println(checkString("{[(]}"));
-
-    }
-
-
     public static boolean checkString(String value) {
         if (value.length() % 2 == 1 || value.length() < 2) {
             return false;
